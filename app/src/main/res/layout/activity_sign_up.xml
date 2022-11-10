@@ -24,12 +24,12 @@
             android:textColor="@color/primary_text"
             android:textSize="@dimen/_18ssp"
             android:textStyle="bold"/>
-        
+
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_20ssp">
-            
+
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/imageProfile"
                 android:layout_width="@dimen/_80ssp"
@@ -124,7 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10ssp"
-            android:text="@string/giri_yap"
+            android:text="@string/Giris_Yap"
             android:textColor="@color/primary"
             android:textSize="@dimen/_13ssp"
             android:textStyle="bold"

@@ -4,22 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.bitk.R;
-import com.example.bitk.databinding.ActivitySignInBinding;
+import com.example.bitk.databinding.ActivitySignUpBinding;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private ActivitySignInBinding binding;
+    private ActivitySignUpBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivitySignInBinding.inflate(getLayoutInflater());
+        binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setListeners();
     }
 
     private void setListeners() {
-        binding.textSignIn.setOnClickListener(v -> onBackPressed());
+        binding.textSignIn.setOnClickListener(v-> onBackPressed());
     }
 }
