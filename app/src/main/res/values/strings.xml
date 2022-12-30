@@ -14,4 +14,5 @@
     <string name="signup">Kayıt Ol</string>
     <string name="SignIn">Giriş Yap</string>
     <string name="resim_ekle">resim ekle</string>
+    <string name="select_user">Kişiler</string>
 </resources>
