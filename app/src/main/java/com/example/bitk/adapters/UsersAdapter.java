@@ -33,7 +33,6 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserViewHold
         );
         return new UserViewHolder(itemContainerUserBinding);
     }
-
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
         holder.setUserData(users.get(position));
@@ -50,7 +49,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserViewHold
 
         UserViewHolder(ItemContainerUserBinding itemContainerUserBinding) {
             super(itemContainerUserBinding.getRoot());
-            binding =itemContainerUserBinding;
+            binding = itemContainerUserBinding;
         }
 
         void setUserData(User user) {
@@ -61,7 +60,8 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UserViewHold
     }
 
     private Bitmap getUserImage(String encodedImage) {
-        byte[] bytes = Base64.decode(encodedImage,Base64.DEFAULT);
+        byte[] bytes;
+        bytes = Base64.decode(encodedImage,Base64.DEFAULT);
         return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
     }
 }
